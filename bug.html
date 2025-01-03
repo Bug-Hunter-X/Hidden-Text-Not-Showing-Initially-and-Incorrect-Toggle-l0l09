@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be hidden initially.
+  </div>
+  <button onclick="showText()">Show Text</button>
+
+  <script>
+    function showText() {
+      document.getElementById("myDiv").style.display = "block";
+      // Missing or incorrect conditional check for display style before toggling
+    }
+  </script>
+</body>
+</html>
